@@ -4,7 +4,6 @@
 // @version      1.0
 // @description  Algorithm to create amazing beats on chrome music lab.
 // @author       GSRHackZ
-// @license      MIT
 // @match        https://musiclab.chromeexperiments.com/Song-Maker/*
 // @icon         https://www.google.com/s2/favicons?domain=chromeexperiments.com
 // @grant        none
@@ -29,10 +28,12 @@
 
 // ONLY CHANGE THESE
 
-let length = 6;
+let length = 10;
 let bpb = 3;
 let split = 2;
 let range = 5;
+let insturment = "marimba"; // synth, piano, strings, woodwind, marimba - write on in;
+let percussion = "electronic"; // kit, conga, electronic, blocks - write one in;
 
 //------------- Control panel finish ---------------|
 
@@ -69,7 +70,7 @@ function start(){
                 let cords = batchNewPos(100,uw,y);
                 console.log(cords);
                 let moves = defineMoves(cords);
-                select(moves,left,right,up,down,enter)
+                select(moves,left,right,up,down,enter);
                 clearInterval(wait);
             }
         },1000)
@@ -78,6 +79,17 @@ function start(){
 }
 
 smartExec(start,1000);
+smartExec(selectBtns,1000);
+
+function selectBtns(){
+    if(document.getElementById("instrument-toggle-button")!==undefined){
+        let insturment_ = document.getElementById("instrument-toggle-button");
+        let percussion_ = document.getElementById("percussion-toggle-button");
+        choose(0,insturment_);
+        choose(1,percussion_);
+        return true;
+    }
+}
 
 function batchNewPos(max,uw,y){
     let cords = [];
@@ -201,6 +213,26 @@ function pluginSettings(){
     },100)
     }
 
+
+function choose(type,btn){
+    if(type==0){
+        for(let i=0;i<10;i++){
+            btn.click();
+            if(btn.innerText.toLowerCase()==insturment){
+                break;
+            }
+        }
+    }
+    else if(type==1){
+        for(let i=0;i<10;i++){
+            btn.click();
+            if(btn.innerText.toLowerCase()==percussion){
+                break;
+            }
+        }
+    }
+}
+
 function smartExec(func,wait){
     let exec = setInterval(()=>{
         if(func()){
@@ -214,3 +246,6 @@ function randNumb(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
