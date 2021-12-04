@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Chrome Music Lab - Music Generator
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Algorithm to create amazing beats on chrome music lab.
 // @author       GSRHackZ
-// @match        https://musiclab.chromeexperiments.com/Song-Maker/*
+// @match        https://musiclab.chromeexperiments.com/Song-Maker*
 // @icon         https://www.google.com/s2/favicons?domain=chromeexperiments.com
 // @grant        none
 // ==/UserScript==
