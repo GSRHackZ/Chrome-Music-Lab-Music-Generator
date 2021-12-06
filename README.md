@@ -13,7 +13,7 @@ Algorithm to create amazing beats on chrome music lab.
 <h3>Key points:</h3>
 <ul style="margin-bottom:10px;">
 <li>This script was made for <a href="https://musiclab.chromeexperiments.com/Song-Maker/">Chrome Music Lab - Song Maker</a> exclusively. ⚠</li><br>
-<li>This script makes amazing beats every time you refresh the Chrome Music Lab - Song make page. 😲</li><br>
+<li>This script makes amazing beats every time you refresh the Chrome Music Lab - Song maker page. 😲</li><br>
 <li>You can watch as it generates you a beat, moving around the selector and clicking away at instruments and percussions. 🎷🥁🎹</li><br>
 <li>This generates a beat incredibly fast right before your eyes. 👀</li><br>
 <li>Only care for the variables under the comment that says "only change these". Change nothing else. 🟢</li><br>
