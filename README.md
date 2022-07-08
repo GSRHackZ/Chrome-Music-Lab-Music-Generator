@@ -17,7 +17,7 @@ Algorithm to create amazing beats on chrome music lab.
 <li>You can watch as it generates you a beat, moving around the selector and clicking away at instruments and percussions. 🎷🥁🎹</li><br>
 <li>This generates a beat incredibly fast right before your eyes. 👀</li><br>
 <li>Only care for the variables under the comment that says "only change these". Change nothing else. 🟢</li><br>
-<li>Some features have still not been enabled, but will be in a later update. Do not mind those, and just ignore them. 🔴</li><br>
+<li>Some features have still not been enabled, but will be in a later update. Do not mind those, just ignore them. 🔴</li><br>
 <li>Along with upcoming features, another part of the next major update will be Smart Music Generation, which will use AI to make the best melodies & beats. 🤖</li><br>
 <li>If you have any issues or recommendations please contact me 😁</li><br>
 </ul>
